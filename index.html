@@ -4,80 +4,129 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kinverli Masiel Rodríguez Escarza</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f3e5f5;
-      color: #4a148c;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to top right, #f3e8ff, #ede9fe);
+      color: #3b0764;
       margin: 0;
       padding: 0;
     }
-
     .container {
-      max-width: 800px;
+      max-width: 960px;
       margin: 40px auto;
-      background-color: #ffffff;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(74, 20, 140, 0.3);
+      background: white;
+      padding: 40px;
+      border-radius: 30px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.1);
     }
-
-    h1, h2 {
-      color: #6a1b9a;
-      border-bottom: 2px solid #ba68c8;
-      padding-bottom: 5px;
+    h1 {
+      font-size: 32px;
+      color: #5b21b6;
+      margin-bottom: 20px;
     }
-
-    ul {
-      list-style-type: disc;
-      margin-left: 20px;
-    }
-
-    a {
-      color: #8e24aa;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
     p {
-      font-size: 18px;
+      font-size: 16px;
+      margin-bottom: 16px;
+    }
+    .section {
+      margin-bottom: 30px;
+    }
+    .section h2 {
+      font-size: 20px;
+      font-weight: 600;
+      color: #6b21a8;
+      margin-bottom: 10px;
+    }
+    ul {
+      padding-left: 20px;
+      margin: 0;
+    }
+    ul li {
+      margin-bottom: 8px;
+    }
+    .card {
+      background: #ede9fe;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.05);
+      margin-bottom: 20px;
+    }
+    .contact-button {
+      display: inline-flex;
+      align-items: center;
+      background: #8b5cf6;
+      color: white;
+      padding: 14px 24px;
+      text-decoration: none;
+      border-radius: 12px;
+      font-weight: 600;
+      font-size: 16px;
+      transition: background 0.3s;
+    }
+    .contact-button:hover {
+      background: #7c3aed;
+    }
+    .contact-button::before {
+      content: "📩";
+      margin-right: 10px;
     }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>Kinverli Masiel Rodríguez Escarza</h1>
-    <p>Tengo 19 años, estudio la carrera de Ingeniería Industrial y voy en mi 3er año.</p>
+    <p>Tengo 19 años y actualmente estudio la carrera de Ingeniería Industrial en la Universidad Católica San Pablo. Me considero una persona proactiva, empática y con muchas ganas de aprender. Me apasiona encontrar soluciones prácticas a los problemas, trabajar en equipo y seguir creciendo tanto personal como profesionalmente.</p>
+    <p>Me interesa especialmente el área de gestión de procesos y mejora continua, y busco desarrollar habilidades que me permitan aportar valor en cualquier entorno laboral.</p>
+    <p>Además, disfruto participar en proyectos colaborativos y siempre busco dar lo mejor de mí en cada desafío.</p>
 
-    <h2>Aptitudes</h2>
-    <ul>
-      <li>Empática</li>
-      <li>Honesta</li>
-      <li>Proactiva</li>
-      <li>Carismática</li>
-    </ul>
+    <div class="section">
+      <h2>Aptitudes</h2>
+      <div class="card">
+        <ul>
+          <li>Empática</li>
+          <li>Honesta</li>
+          <li>Proactiva</li>
+          <li>Carismática</li>
+        </ul>
+      </div>
+    </div>
 
-    <h2>Cursos que estoy llevando</h2>
-    <ul>
-      <li>Cálculo I</li>
-      <li>Física II</li>
-      <li>Fundamentos de Informática</li>
-      <li>Introducción a la filosofía</li>
-      <li>Matemática II</li>
-      <li>Amar o defender</li>
-    </ul>
+    <div class="section">
+      <h2>Cursos que estoy llevando</h2>
+      <div class="card">
+        <ul>
+          <li>Cálculo I</li>
+          <li>Física II</li>
+          <li>Fundamentos de Informática</li>
+          <li>Antropología</li>
+          <li>Matemática II</li>
+          <li>Amar o Defender</li>
+        </ul>
+      </div>
+    </div>
 
-    <h2>Profesor</h2>
-    <p><a href="https://www.linkedin.com/in/ecuadrosv/" target="_blank">Ernesto Cuadros Vargas</a></p>
+    <div class="section">
+      <h2>Profesor</h2>
+      <div class="card">
+        Ernesto Cuadros Vargas
+      </div>
+    </div>
 
-    <h2>Compañeras de clase</h2>
-    <ul>
-      <li>Cristell Zuleyka Ranilla Vilca</li>
-      <li>Joselyn Gardenia Canchumani Tito</li>
-    </ul>
+    <div class="section">
+      <h2>Compañeras de clase</h2>
+      <div class="card">
+        <ul>
+          <li>Cristell Zuleyka Ranilla Vilca</li>
+          <li>Joselyn Gardenia Canchumani Tito</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section">
+      <a href="mailto:kinverli@example.com" class="contact-button">Contáctame</a>
+    </div>
   </div>
 </body>
 </html>
