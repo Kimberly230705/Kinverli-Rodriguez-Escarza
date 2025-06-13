@@ -1,105 +1,128 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Kinverli Masiel Rodríguez Escarza</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kinverli Masiel</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
   <style>
     body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f1fadc;
-    }
-    .card {
-      max-width: 900px;
-      background-color: #d3ecb9;
-      border-radius: 25px;
-      margin: 50px auto;
+      font-family: 'Inter', sans-serif;
+      background-color: #ecf4e7;
       display: flex;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .card {
+      display: flex;
+      background-color: #c8e6a4;
+      border-radius: 24px;
+      max-width: 1000px;
+      width: 100%;
+      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
       overflow: hidden;
     }
+
+    .left, .right {
+      padding: 32px;
+    }
+
     .left {
-      background-color: #b8dd9c;
       width: 35%;
-      padding: 30px;
-      box-sizing: border-box;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      border-top-left-radius: 25px;
-      border-bottom-left-radius: 25px;
+      background-color: #bce3a6;
+      text-align: center;
     }
+
     .left img {
-      width: 160px;
-      height: 160px;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
       object-fit: cover;
-      border-radius: 100%;
-      margin-bottom: 20px;
+      margin-bottom: 16px;
     }
+
     .left h3 {
-      margin-bottom: 10px;
-      font-size: 20px;
+      margin-top: 24px;
+      margin-bottom: 8px;
+      font-weight: 600;
     }
-    .left ul {
-      list-style: none;
-      padding: 0;
-      margin: 0 0 20px 0;
-      text-align: left;
+
+    .left p {
+      margin: 4px 0;
     }
-    .left ul li::before {
-      content: "💚 ";
-    }
+
     .right {
       width: 65%;
-      padding: 30px;
-      box-sizing: border-box;
     }
+
     .right h1 {
-      font-size: 22px;
-      margin-bottom: 15px;
+      color: #2f5723;
+      font-size: 24px;
+      margin-bottom: 16px;
     }
+
     .right p {
-      font-size: 15px;
-      margin-bottom: 12px;
+      margin-bottom: 16px;
+      color: #333;
+      line-height: 1.6;
     }
+
     .section {
-      margin-top: 20px;
+      margin-bottom: 24px;
     }
-    .section h3 {
-      margin-bottom: 10px;
-      font-size: 16px;
+
+    .section h2 {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: #1e3f1c;
     }
-    .section ul {
-      list-style: none;
-      padding-left: 0;
-    }
-    .section ul li::before {
-      content: "📘 ";
-    }
-    .companions ul li::before {
-      content: "👩‍🎓 ";
-    }
-    .contact {
-      margin-top: 20px;
-      font-weight: bold;
+
+    ul {
+      padding-left: 20px;
     }
   </style>
 </head>
 <body>
   <div class="card">
     <div class="left">
-      <img src="https://i.imgur.com/5N4OX1J.png" alt="Foto de Kinverli">
-      <h3>Aptitudes</h3>
-      <ul>
-        <li>Empática</li>
-        <li>Honesta</li>
-        <li>Proactiva</li>
-        <li>Carismática</li>
-      </ul>
-      <h3>Profesor</h3>
-      <p>Ernesto Cuadros Vargas</p>
+      <img src="foto.jpg" alt="Foto de Kinverli con gorrito" />
+      <div class="section">
+        <h3>Aptitudes</h3>
+        <p>Empática</p>
+        <p>Honesta</p>
+        <p>Proactiva</p>
+        <p>Carismática</p>
+      </div>
+      <div class="section">
+        <h3>Profesor</h3>
+        <p>Ernesto Cuadros Vargas</p>
+      </div>
+      <div class="section">
+        <h3>Compañeras de clase</h3>
+        <p>Cristell Zuleyka Ranilla Vilca</p>
+        <p>Joselyn Gardenia Canchumani Tito</p>
+      </div>
     </div>
     <div class="right">
       <h1>Kinverli Masiel Rodríguez Escarza</h1>
-      <p>Tengo 19 años y actualmente estudio la carrera de Ingeniería Industrial en la Universidad Católica San Pablo.</p>
-      <p>Me
+      <p>Tengo 19 años y actualmente estudio la carrera de Ingeniería Industrial en la Universidad Católica San Pablo. Me considero una persona proactiva, empática y con muchas ganas de aprender. Me apasiona encontrar soluciones prácticas a los problemas, trabajar en equipo y seguir creciendo tanto personal como profesionalmente.</p>
+      <p>Me interesa especialmente el área de gestión de procesos y mejora continua, y busco desarrollar habilidades que me permitan aportar valor en cualquier entorno laboral.</p>
+      <p>Además, disfruto participar en proyectos colaborativos y siempre busco dar lo mejor de mí en cada desafío.</p>
+
+      <div class="section">
+        <h2>Cursos que estoy llevando</h2>
+        <ul>
+          <li>Cálculo I</li>
+          <li>Física II</li>
+          <li>Fundamentos de Informática</li>
+          <li>Introducción a la Filosofía</li>
+          <li>Matemática II</li>
+          <li>Amar o Defender</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
