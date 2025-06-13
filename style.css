@@ -1,0 +1,244 @@
+/* Importar una fuente de Google Fonts (opcional, si quieres una fuente específica) */
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap'); */
+
+body {
+    font-family: 'Arial', sans-serif; /* Puedes cambiar a 'Montserrat', sans-serif; si importas la fuente */
+    background-color: #f0f2f5; /* Un gris muy claro para el fondo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ocupa al menos el alto completo de la ventana */
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box; /* Asegura que el padding no añada al ancho total */
+    position: relative; /* Para posicionar los elementos decorativos */
+    overflow: hidden; /* Evita barras de desplazamiento si los elementos decorativos se salen */
+}
+
+.container {
+    background-color: #fff; /* Fondo blanco para el contenedor principal */
+    border-radius: 20px; /* Bordes redondeados */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    width: 100%;
+    max-width: 850px; /* Ancho máximo similar al de la imagen */
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px; /* Espacio entre secciones principales */
+    z-index: 1; /* Para que esté por encima de las decoraciones de fondo */
+    position: relative;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #eee; /* Línea divisoria suave */
+    position: relative; /* Para posicionar la estrella de decoración */
+}
+
+.profile-avatar {
+    width: 120px;
+    height: 120px;
+    background-color: #e0b0ff; /* Un morado claro para el avatar */
+    border-radius: 50%; /* Forma circular */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px; /* Para el emoji si no hay imagen */
+    color: #fff;
+    /* Si tienes una imagen de avatar, descomenta y ajusta: */
+    /* background-image: url('tu_avatar.jpg'); */
+    /* background-size: cover; */
+    /* background-position: center; */
+}
+
+.profile-info h1 {
+    font-size: 32px;
+    color: #4a148c; /* Morado oscuro para el nombre */
+    margin: 0;
+    font-weight: 700; /* Negrita */
+}
+
+.profile-info p {
+    font-size: 17px;
+    color: #6a1b9a; /* Morado medio para la descripción */
+    margin: 8px 0 0;
+    line-height: 1.5;
+}
+
+.header-decoration-star {
+    position: absolute;
+    top: 15px; /* Ajusta según sea necesario */
+    right: 20px; /* Ajusta según sea necesario */
+    font-size: 35px;
+    opacity: 0.8;
+    color: #e0b0ff; /* Color de la estrella */
+    transform: rotate(20deg); /* Pequeña rotación */
+    text-shadow: 0 0 5px rgba(255,255,255,0.7); /* Efecto de brillo */
+}
+
+
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* 2 columnas en pantallas grandes, 1 en pequeñas */
+    gap: 25px; /* Espacio entre las tarjetas */
+}
+
+.card {
+    background-color: #f3e5f5; /* Un morado muy claro para el fondo de las tarjetas */
+    border-radius: 18px; /* Bordes redondeados de las tarjetas */
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Sombra más suave para las tarjetas */
+    display: flex;
+    flex-direction: column;
+}
+
+.card h2 {
+    font-size: 22px;
+    color: #6a1b9a; /* Morado para los títulos de las secciones */
+    margin-top: 0;
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    font-weight: 600; /* Negrita */
+}
+
+/* Iconos para los títulos (puedes usar Font Awesome o SVG para más opciones) */
+.card.aptitudes h2::before { content: '💡 '; margin-right: 10px; font-size: 28px;}
+.card.cursos h2::before { content: '📚 '; margin-right: 10px; font-size: 28px;}
+.card.profesor h2::before { content: '👨‍🏫 '; margin-right: 10px; font-size: 28px;}
+.card.compañeras h2::before { content: '👯‍♀️ '; margin-right: 10px; font-size: 28px;}
+
+.card ul {
+    list-style: none; /* Quitamos los puntos de la lista */
+    padding: 0;
+    margin: 0;
+}
+
+.card ul li {
+    font-size: 16.5px;
+    color: #424242; /* Gris oscuro para el texto */
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.card p {
+    font-size: 16.5px;
+    color: #424242;
+    margin: 0;
+}
+
+.contact-button {
+    background-color: #9c27b0; /* Morado vibrante para el botón */
+    color: #fff;
+    padding: 15px 25px;
+    border-radius: 12px;
+    text-align: center;
+    text-decoration: none; /* Quitar el subrayado del enlace */
+    font-size: 19px;
+    font-weight: bold;
+    display: flex; /* Para centrar el texto con un posible icono */
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-top: 25px; /* Espacio superior para el botón */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transición suave al hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-button::before {
+    content: '✉️'; /* Icono de sobre con emoji */
+    font-size: 22px;
+}
+
+.contact-button:hover {
+    background-color: #7b1fa2; /* Morado más oscuro al pasar el ratón */
+    transform: translateY(-2px); /* Pequeño efecto de elevación */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilos para las decoraciones de fondo (estrellas o formas) */
+.bg-decoration-1, .bg-decoration-2 {
+    content: '';
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.3); /* Blanco con transparencia */
+    border-radius: 50%;
+    filter: blur(15px); /* Efecto de desenfoque */
+    z-index: 0; /* Asegura que estén detrás del contenido principal */
+}
+
+.bg-decoration-1 {
+    width: 80px;
+    height: 80px;
+    top: 10%;
+    left: 8%;
+    transform: rotate(30deg); /* Rotación para simular estrella */
+    border-radius: 20% 80% 50% 50% / 50% 50% 80% 20%; /* Forma más irregular */
+}
+
+.bg-decoration-2 {
+    width: 100px;
+    height: 100px;
+    bottom: 5%;
+    right: 12%;
+    transform: rotate(-45deg);
+    border-radius: 80% 20% 50% 50% / 50% 50% 20% 80%; /* Otra forma irregular */
+}
+
+
+/* Responsive Design para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        margin: 10px; /* Un poco de margen en pantallas pequeñas */
+    }
+
+    .profile-header {
+        flex-direction: column; /* Apila el avatar y la info en columnas */
+        text-align: center;
+        gap: 15px;
+    }
+
+    .profile-info h1 {
+        font-size: 28px;
+    }
+
+    .profile-info p {
+        font-size: 15px;
+    }
+
+    .profile-avatar {
+        width: 100px;
+        height: 100px;
+    }
+
+    .header-decoration-star {
+        top: 5px; /* Ajusta para la nueva posición */
+        right: 5px;
+        font-size: 30px;
+    }
+
+    .content-grid {
+        grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
+        gap: 20px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .card h2 {
+        font-size: 20px;
+    }
+
+    .contact-button {
+        font-size: 17px;
+        padding: 12px 20px;
+    }
+
+    .bg-decoration-1, .bg-decoration-2 {
+        display: none; /* Oculta las decoraciones de fondo en móviles para simplificar */
+    }
+}
